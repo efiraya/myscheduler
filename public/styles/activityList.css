@@ -1,0 +1,107 @@
+.activity-list-container {
+    padding: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-table {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.list-table h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.list-table .btn-primary {
+    margin-bottom: 20px;
+}
+
+.list-table table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+}
+
+.list-table th, .list-table td {
+    padding: 15px; 
+    text-align: left;
+    vertical-align: middle; 
+    border: 1px solid #ddd; 
+}
+
+.list-table th {
+    background-color: #007bff; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.list-table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.list-table tr:hover {
+    background-color: #e2e6ea;
+}
+
+.list-table .actions a {
+    margin-right: 10px;
+}
+
+.list-table a {
+    color: #007bff; 
+}
+
+.list-table a:hover {
+    color: #0056b3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.pagination .btn {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.pagination .btn:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.pagination .btn.disabled {
+    background-color: transparent;
+    color: #a0a0a0;
+    border: none;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .list-table {
+        padding: 0; 
+        overflow-x: auto;
+    }
+    .list-table table {
+        display: block;
+        white-space: nowrap;
+        min-width: 100%; 
+    }
+}

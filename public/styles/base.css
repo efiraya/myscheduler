@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    /* background: linear-gradient(135deg, #87a5ff 0%, #2525d6 100%); */
+    background: #667eea;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    /* padding-top: 15px; */
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #343a40;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1100;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-button {
+    background-color: #495057;
+    border: none;
+    color: #fff;
+    text-align: left;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sidebar .nav-button:hover {
+    background-color: #6c757d;
+}
+
+
+.sidebar .nav-button.active {
+    background-color: #343a40;
+}
+
+.sidebar .nav-button i {
+    margin-right: 10px;
+}
+
+.sidebar h4 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.content-wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: calc(100% - 300px);
+    height: 100%;
+    /* max-height: 100vh; */
+    /* Full height minus header */
+    /* overflow: auto; */
+    transition: left 0.3s ease, width 0.3s ease;
+    border-top-right-radius: 8px;
+}
+
+.content-wrapper.full-width {
+    left: 0;
+    width: 100%;
+    /* transition: margin-left 0.3s ease; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+header {
+    position: relative;
+    /* left: 300px; */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0;
+    height: 65px;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+#student-name {
+    font-size: 1rem;
+}
+
+.navbar-brand {
+    background-color: #212529;
+    /* background-color: #212529; */
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#page-title {
+    font-size: 1.4rem;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    /* overflow-z: auto; */
+    padding: 15px;
+    box-sizing: border-box;
+    height: calc(100vh - 56px);
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #c6c6c6;
+    border-radius: 10px;
+}
+
+.main-content:hover::-webkit-scrollbar {
+    opacity: 1; 
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #c6c6c6;
+}
+
+.main-content:hover {
+    scrollbar-color: #c6c6c6 transparent; 
+}
+
+@media (max-width: 900px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    #page-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    #page-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    #page-title {
+        font-size: 1.1rem;
+    }
+}

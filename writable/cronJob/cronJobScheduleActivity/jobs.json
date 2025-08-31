@@ -1,0 +1,38 @@
+[
+    {
+        "name": "cronJobScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2025-01-21 07:00:04",
+        "end_at": "2025-01-21 07:00:04",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    },
+    {
+        "name": "cronJobScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2025-01-21 06:54:02",
+        "end_at": "2025-01-21 06:54:02",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    },
+    {
+        "name": "cronJobScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2025-01-21 06:45:03",
+        "end_at": "2025-01-21 06:45:03",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    }
+]

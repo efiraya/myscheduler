@@ -1,0 +1,38 @@
+[
+    {
+        "name": "updadteScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-16 03:00:00",
+        "end_at": "2024-12-16 03:00:00",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    },
+    {
+        "name": "updadteScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-15 12:00:00",
+        "end_at": "2024-12-15 12:00:00",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    },
+    {
+        "name": "updadteScheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-14 11:00:01",
+        "end_at": "2024-12-14 11:00:01",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    }
+]

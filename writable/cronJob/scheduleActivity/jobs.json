@@ -1,0 +1,38 @@
+[
+    {
+        "name": "scheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-09 05:00:05",
+        "end_at": "2024-12-09 05:00:05",
+        "duration": "00:00:00",
+        "output": null,
+        "error": null,
+        "test_time": null
+    },
+    {
+        "name": "scheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-09 04:00:09",
+        "end_at": "2024-12-09 04:00:14",
+        "duration": "00:00:04",
+        "output": null,
+        "error": "\"CodeIgniter\\\\Database\\\\Exceptions\\\\DatabaseException: Unable to connect to the database.\\r\\nMain connection [MySQLi]: No connection could be made because the target machine actively refused it in C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Database\\\\BaseConnection.php:467\\nStack trace:\\n#0 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Database\\\\BaseConnection.php(616): CodeIgniter\\\\Database\\\\BaseConnection->initialize()\\n#1 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Database\\\\BaseBuilder.php(1644): CodeIgniter\\\\Database\\\\BaseConnection->query('SELECT *\\\\nFROM `...', Array, false)\\n#2 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Model.php(286): CodeIgniter\\\\Database\\\\BaseBuilder->get()\\n#3 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\BaseModel.php(676): CodeIgniter\\\\Model->doFindAll(0, 0)\\n#4 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\app\\\\Controllers\\\\UserController.php(140): CodeIgniter\\\\BaseModel->findAll()\\n#5 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\app\\\\Config\\\\CronJob.php(143): App\\\\Controllers\\\\UserController->scheduleActivity()\\n#6 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\daycry\\\\cronjob\\\\src\\\\Job.php(252): Config\\\\CronJob->Config\\\\{closure}()\\n#7 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\daycry\\\\cronjob\\\\src\\\\Job.php(252): Closure->__invoke()\\n#8 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\daycry\\\\cronjob\\\\src\\\\Job.php(161): Daycry\\\\CronJob\\\\Job->runClosure()\\n#9 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\daycry\\\\cronjob\\\\src\\\\JobRunner.php(90): Daycry\\\\CronJob\\\\Job->run()\\n#10 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\daycry\\\\cronjob\\\\src\\\\Commands\\\\Run.php(83): Daycry\\\\CronJob\\\\JobRunner->run()\\n#11 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\CLI\\\\Commands.php(70): Daycry\\\\CronJob\\\\Commands\\\\Run->run(Array)\\n#12 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\CLI\\\\Console.php(48): CodeIgniter\\\\CLI\\\\Commands->run('cronjob:run', Array)\\n#13 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Boot.php(351): CodeIgniter\\\\CLI\\\\Console->run()\\n#14 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\vendor\\\\codeigniter4\\\\framework\\\\system\\\\Boot.php(104): CodeIgniter\\\\Boot::runCommand(Object(CodeIgniter\\\\CLI\\\\Console))\\n#15 C:\\\\Users\\\\Acer\\\\OneDrive\\\\Desktop\\\\SKRIPSI\\\\scheduler\\\\spark(84): CodeIgniter\\\\Boot::bootSpark(Object(Config\\\\Paths))\\n#16 {main}\"",
+        "test_time": null
+    },
+    {
+        "name": "scheduleActivity",
+        "type": "closure",
+        "action": "{}",
+        "environment": null,
+        "start_at": "2024-12-08 23:00:08",
+        "end_at": "2024-12-08 23:00:10",
+        "duration": "00:00:01",
+        "output": null,
+        "error": null,
+        "test_time": null
+    }
+]
