@@ -4,6 +4,8 @@ A scheduling management PHP-based website that applies the **Priority Scheduling
 
 Disclaimer: This website was developed for research and academic purposes during my thesis. The demo website can be accessed at myscheduler.xyz
 
+---
+
 ## Features
 - Add, edit, and delete tasks  
 - Responsive design (desktop & mobile)  
@@ -13,6 +15,8 @@ Disclaimer: This website was developed for research and academic purposes during
   - Dashboard with prioritized task list  
   - Email notifications for tasks nearing deadlines  
 - Help page for easy navigation
+
+---
 
 ## Note
 - Make sure that Composer is installed after cloning the repository.
