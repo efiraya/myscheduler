@@ -2,7 +2,7 @@
 
 A scheduling management PHP-based website that applies the **Priority Scheduling Algorithm** to organize tasks and activities based on urgency and priority, supporting better time management and reducing stress to help college students manage their academic tasks and activities more efficiently.
 
-Disclaimer: This website was developed for research and academic purposes during my thesis. The demo website can be accessed at [myscheduler.xyz](https://myscheduler.xyz)
+Disclaimer: This website was developed for research and academic purposes during my thesis. The website demo can be accessed at [myscheduler.xyz](https://myscheduler.xyz)
 
 ## Features
 - Add, edit, and delete tasks  
