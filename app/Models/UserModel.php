@@ -56,13 +56,15 @@ class UserModel extends Model
 
     public function checkLoginAttempts($username)
     {
-        $minutes = 15;
         $maxAttempts = 5;
+        $key = 'login_attempts_' . md5($username);
 
-        $attempts = cache()->get('login_attempts_' . md5($username)) ?? 0;
+        $data = cache()->get($key);
 
-        if ($attempts >= $maxAttempts) {
-            return false;
+        if ($data && is_array($data)) {
+            if ($data['count'] >= $maxAttempts && $data['expires_at'] > time()) {
+                return false; 
+            }
         }
 
         return true;
@@ -70,8 +72,23 @@ class UserModel extends Model
 
     public function incrementLoginAttempts($username)
     {
-        $attempts = cache()->get('login_attempts_' . md5($username)) ?? 0;
-        cache()->save('login_attempts_' . md5($username), $attempts + 1, 900); // 15 minutes
+        $lockoutMinutes = 15;
+        $key = 'login_attempts_' . md5($username);
+
+        $data = cache()->get($key);
+
+        if ($data && is_array($data)) {
+            $newCount = $data['count'] + 1;
+        } else {
+            $newCount = 1;
+        }
+
+        $attempts = [
+            'count'      => $newCount,
+            'expires_at' => time() + ($lockoutMinutes * 60)
+        ];
+
+        cache()->save($key, $attempts, $lockoutMinutes * 60);
     }
 
     public function resetLoginAttempts($username)
@@ -81,11 +98,15 @@ class UserModel extends Model
 
     public function getLoginLockoutTime($username)
     {
-        $attempts = cache()->get('login_attempts_' . md5($username));
-        if (!$attempts) return 0;
+        $data = cache()->get('login_attempts_' . md5($username));
+        if (!$data) return 0;
 
-        $ttl = cache()->getTTL('login_attempts_' . md5($username));
-        return ceil($ttl / 60);
+        if (isset($data['expires_at'])) {
+            $ttl = $data['expires_at'] - time();
+            return $ttl > 0 ? ceil($ttl / 60) : 0;
+        }
+
+        return 1;
     }
 
     public function verifyRememberToken($token)
