@@ -15,7 +15,7 @@
 	  	<!-- Canonical SEO -->
 	  	<link rel="canonical" href="https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/">
 	  	<!-- Favicon -->
-	  	<link rel="icon" type="image/x-icon" href="https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/img/favicon/favicon.ico" />
+	  	<link rel="icon" type="image/x-icon" href="<?= base_url('images/activities.png') ?>" />
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com/">
